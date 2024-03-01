@@ -1,0 +1,21 @@
+{
+  "name": "ustoz_shogirt.bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grammyjs/router": "^2.0.0",
+    "@grammyjs/storage-supabase": "^2.4.1",
+    "dotenv": "^16.3.1",
+    "grammy": "^1.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
