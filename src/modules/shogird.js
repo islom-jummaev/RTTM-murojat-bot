@@ -76,7 +76,7 @@ shfRoute.on("message:text", async (ctx) => {
 const shjRoute = router.route("shj");
 shjRoute.hears(`Yoq`, async (ctx) => {
     await ctx.reply(`Qabul qilinmadi`, { reply_markup: { ...bolim } });
-    ctx.session.step = ""; // Reset the step
+    ctx.session = { step: "Ism" }; // Reset the step
 });
 
 shjRoute.hears("Ha", async (ctx) => {
@@ -89,6 +89,7 @@ shjRoute.hears("Ha", async (ctx) => {
     await ctx.api.sendMessage("-1002091755827", channelMessage); // Send the message to the channel
 
     ctx.session.step = ""; // Reset the step
+    ctx.session = { step: "Ism" };
 });
 
 module.exports = router;
